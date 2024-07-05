@@ -188,6 +188,7 @@
 
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
 .icon-bg {
     background-image: url(../assets/img/footer-bg.jpg);
@@ -204,6 +205,25 @@
             display: flex;
             gap: 30px;
             padding: 50px 0;
+
+            .list {
+                margin-bottom: 20px;
+
+                h3 {
+                    margin-bottom: 15px;
+                }
+
+                a {
+                    display: inline-block;
+                    color: rgb(122, 122, 122);
+                    padding: 3px 0;
+                    
+                    
+                }
+            }
+           
+
+           
         }
 
         .image-container {
@@ -225,9 +245,23 @@
         justify-content: space-between;
         padding: 50px 0; 
 
+        .sign-button a {
+            display: inline-block;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid $dc-blue;
+        }
+
         .social {
             display: flex;
             align-items: center;
+
+            span {
+                color: $dc-blue;
+                margin-right: 25px;
+                font-weight: bold;
+            }
 
             ul {
                 display: flex;

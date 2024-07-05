@@ -70,7 +70,6 @@
 
 section {
     width: 100%;
-    // height: 300px;
     background-color: $dc-blue;
 
     .container {
@@ -81,6 +80,7 @@ section {
         .card {
             display: flex;
             justify-content: center;
+            align-items: center;
             width: calc(100% / 5);
 
             .image-container {
@@ -89,6 +89,11 @@ section {
                 img {
                     max-width: 100%;
                 }
+            }
+
+            .card-text a {
+                color: white;
+                padding-left: 15px;
             }
         }
     }
