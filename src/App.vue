@@ -2,6 +2,8 @@
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 import AppBlueSection from './components/AppBlueSection.vue';
+import AppContent from './components/AppContent.vue';
+
 
 
 export default {
@@ -10,6 +12,7 @@ export default {
     AppHeader,
     AppFooter,
     AppBlueSection,
+    AppContent,
     
   }
 }
@@ -17,6 +20,9 @@ export default {
 
 <template>
   <AppHeader />
+  <main>
+    <AppContent />
+  </main>
   <AppBlueSection />
   <AppFooter />
 
