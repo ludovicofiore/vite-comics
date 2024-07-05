@@ -137,11 +137,55 @@
         </section>
 
         <!-- section finale -->
-         <section>
+         <section id="final-section">
+            <div class="container">
+
+                <div class="sign-button">
+                    <a href="#">
+                        SIGN-UP NOW!
+                    </a>
+                </div>
+
+                <div class="social">
+                    <span>FOLLOW US</span>
+
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-facebook.png" alt="link facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-twitter.png" alt="link twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-youtube.png" alt="link youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-pinterest.png" alt="link pinterest">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="../assets/img/footer-periscope.png" alt="link periscope">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
 
          </section>
     </footer>
 </template>
+
+
+
 
 <style lang="scss" scoped>
 
@@ -167,6 +211,27 @@
 
             img {
                 max-width: 100%;
+            }
+        }
+    }
+}
+
+
+#final-section {
+    background-color: rgb(48, 48, 48);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px 0; 
+
+        .social {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                gap: 20px;
             }
         }
     }
