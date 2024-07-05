@@ -6,7 +6,7 @@
 
 <template>
     <header>
-        <div class="row">
+        <div class="row container">
 
             <span id="header-logo">
                 <img src="../assets/img/dc-logo.png" alt="logo DC">
@@ -56,8 +56,8 @@ header {
 }
 
 .row {
-    width: 80%;
-    margin: 0 auto;
+
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
