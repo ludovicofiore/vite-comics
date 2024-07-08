@@ -1,6 +1,143 @@
 <script>
     export default {
         name: 'AppFooter',
+
+        // aggiungo struttura dati
+        data() {
+            return {
+                linksComics: [
+                    {
+                        text: "Characters",
+                        url: "#",
+                    },
+                    {
+                        text: "Comics",
+                        url: "#",
+                    },
+                    {
+                        text: "Movies",
+                        url: "#",
+                    },
+                    {
+                        text: "TV",
+                        url: "#",
+                    },
+                    {
+                        text: "Games",
+                        url: "#",
+                    },
+                    
+                    {
+                        text: "Videos",
+                        url: "#",
+                    },
+                    {
+                        text: "Fans",
+                        url: "#",
+                    },
+                    {
+                        text: "News",
+                        url: "#",
+                    },
+                    
+                ],
+
+                linksShop: [
+                    {
+                        text: "Shop DC",
+                        url: "#",
+                    },
+                    {
+                        text: "Shop DC Collectibles",
+                        url: "#",
+                    },
+                    
+                ],
+
+                linksDC: [
+                    {
+                        text: "Characters",
+                        url: "#",
+                    },
+                    {
+                        text: "Comics",
+                        url: "#",
+                    },
+                    {
+                        text: "Movies",
+                        url: "#",
+                    },
+                    {
+                        text: "TV",
+                        url: "#",
+                    },
+                    {
+                        text: "Games",
+                        url: "#",
+                    },
+                    
+                    {
+                        text: "Videos",
+                        url: "#",
+                    },
+                    {
+                        text: "Fans",
+                        url: "#",
+                    },
+                    {
+                        text: "News",
+                        url: "#",
+                    },
+                    {
+                        text: "Games",
+                        url: "#",
+                    },
+                    
+                    {
+                        text: "Videos",
+                        url: "#",
+                    },
+                    {
+                        text: "Fans",
+                        url: "#",
+                    },
+                    {
+                        text: "News",
+                        url: "#",
+                    },
+                    
+                ],
+
+                linksSites: [
+                    {
+                        text: "Characters",
+                        url: "#",
+                    },
+                    {
+                        text: "Comics",
+                        url: "#",
+                    },
+                    {
+                        text: "Movies",
+                        url: "#",
+                    },
+                    {
+                        text: "TV",
+                        url: "#",
+                    },
+                    {
+                        text: "Games",
+                        url: "#",
+                    },
+                    
+                    {
+                        text: "Videos",
+                        url: "#",
+                    },
+                    
+                ],
+            }
+        }
     }
 </script>
 
@@ -17,26 +154,8 @@
                             <!-- lista sopra -->
                             <h3>DC COMICS</h3>
                             <ul>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
+                                <li v-for="(link, i) in linksComics" :key="i">
+                                    <a :href="link.url">{{ link.text }}</a>
                                 </li>
                             </ul>
 
@@ -45,12 +164,10 @@
                         <div class="list">
                             <h3>SHOP</h3>
                             <ul>
-                                <li>
-                                    <a href="#">Comics</a>
+                                <li v-for="(link, i) in linksShop" :key="i">
+                                    <a :href="link.url">{{ link.text }}</a>
                                 </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -61,39 +178,10 @@
                         <div class="list">
                             <h3>DC</h3>
                             <ul>
-                                <li>
-                                    <a href="#">Comics</a>
+                                <li v-for="(link, i) in linksDC" :key="i">
+                                    <a :href="link.url">{{ link.text }}</a>
                                 </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
+                               
                             </ul>
                         </div>
 
@@ -104,20 +192,8 @@
                         <div class="list">
                             <h3>SITES</h3>
                             <ul>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
-                                </li>
-                                <li>
-                                    <a href="#">Comics</a>
+                                <li v-for="(link, i) in linksSites" :key="i">
+                                    <a :href="link.url">{{ link.text }}</a>
                                 </li>
                             </ul>
                         </div>

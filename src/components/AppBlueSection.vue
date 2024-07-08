@@ -92,6 +92,7 @@ section {
             .card-text a {
                 color: white;
                 padding-left: 15px;
+                display: inline-block;
             }
         }
     }

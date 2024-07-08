@@ -103,6 +103,7 @@ header {
     
     ul {
         display: flex;
+        flex-wrap: wrap;
         gap: 15px;
         height: 100%;
 
@@ -118,8 +119,6 @@ header {
                 color: $dc-blue;
                 border-bottom: 5px solid $dc-blue;
             }
-
-        
         }
 
 
@@ -129,12 +128,12 @@ header {
 
 #jumbotron {
     width: 100%;
-    height: 300px;
+    height: 450px;
 
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: fill;
     }
 }
 </style>
