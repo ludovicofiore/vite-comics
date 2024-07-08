@@ -189,16 +189,16 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 .icon-bg {
     background-image: url(../assets/img/footer-bg.jpg);
     background-size: cover;
     width: 100%;
-    // height: 500px;
     color: white;
 
     .container {
-        display: flex;
+        @include center(horizontal);
         justify-content: space-between;
 
         .col-container {
@@ -241,7 +241,7 @@
     background-color: rgb(48, 48, 48);
 
     .container {
-        display: flex;
+        @include center(horizontal);
         justify-content: space-between;
         padding: 50px 0; 
 
@@ -254,8 +254,7 @@
         }
 
         .social {
-            display: flex;
-            align-items: center;
+            @include center(horizontal);
 
             span {
                 color: $dc-blue;

@@ -67,20 +67,18 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 section {
     width: 100%;
     background-color: $dc-blue;
 
     .container {
-        display: flex;
-        justify-content: center;
+        @include center(vertical);
         padding: 50px 0;
 
         .card {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include center;
             width: calc(100% / 5);
 
             .image-container {

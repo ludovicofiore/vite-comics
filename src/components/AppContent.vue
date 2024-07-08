@@ -111,6 +111,7 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 
 .container {
@@ -130,16 +131,14 @@
 
     .card-container {
         padding: 50px 0;
-        display: flex;
-        justify-content: center;
+        @include center(vertical);
         gap: 30px;
         flex-wrap: wrap;
     }
 
 
     .button {
-        display: flex;
-        justify-content: center;
+        @include center(vertical);
         padding-bottom: 25px;
 
         span {

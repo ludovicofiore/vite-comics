@@ -88,6 +88,7 @@
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+@use '../styles/partials/mixins' as *;
 
 header {
     background-color: white;
@@ -97,9 +98,8 @@ header {
 .row {
 
     height: 100%;
-    display: flex;
+    @include center(horizontal);
     justify-content: space-between;
-    align-items: center;
     
     ul {
         display: flex;
