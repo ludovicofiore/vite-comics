@@ -80,6 +80,10 @@
         </div>
        
     </header>
+
+    <div id="jumbotron">
+        <img src="../assets/img/jumbotron.jpg" alt="jumbotron">
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -88,7 +92,6 @@
 header {
     background-color: white;
     height: 150px;
-
 }
 
 .row {
@@ -120,6 +123,18 @@ header {
         }
 
 
+    }
+}
+
+
+#jumbotron {
+    width: 100%;
+    height: 300px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 </style>
