@@ -1,6 +1,9 @@
 <script>
     export default {
-        name: 'AppCard'
+        name: 'AppCard',
+        props: {
+            comicsContent: Object
+        }
     }
 </script>
 
@@ -8,11 +11,11 @@
 <template>
     <div class="card">
         <div class="card-image">
-            <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
+            <img :src="comicsContent.thumb" alt="">
         </div>
 
         <div class="card-text">
-            <span>action comics</span>
+            <h3>{{ comicsContent.series }}</h3>
         </div>
     </div>
 
@@ -22,11 +25,20 @@
 <style lang="scss" scoped>
 
 .card {
-    width: calc(100% / 6);
+    flex-basis: calc(100% / 6 - 30px);
+    margin-bottom: 20px;
 
-    .card-image img {
-        max-width: 100%;
+    .card-image {
+        width: 100%;
+        
+
+        img {
+            width: 100%;
+            height: 200px;
+        }
     }
+    
+    
 
     .card-text {
         margin-top: 20px;

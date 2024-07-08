@@ -99,7 +99,7 @@
     </div>
 
     <div class="card-container">
-        <AppCard />
+        <AppCard v-for="(comic, index) in comics" :key="index" :comicsContent="comic"/>
     </div>
 
     <div class="button">
@@ -131,6 +131,7 @@
     .card-container {
         padding: 50px 0;
         display: flex;
+        justify-content: center;
         gap: 30px;
         flex-wrap: wrap;
     }
@@ -139,7 +140,7 @@
     .button {
         display: flex;
         justify-content: center;
-        padding: 25px 0;
+        padding-bottom: 25px;
 
         span {
             background-color: $dc-blue;
